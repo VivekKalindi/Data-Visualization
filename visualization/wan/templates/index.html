@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>BlackCoffer</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/radar.css' %}">
+
+    <!-- script for pie chart apex chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<!-- script ends here -->
+
+{% comment %} scripts for d3js {% endcomment %}
+    <script src="//d3js.org/d3.v4.js"></script>
+{% comment %} ends here {% endcomment %}
+</head>
+<body>
+  
+    <!-- area chart  -->
+    <div class="chart-container3">
+        <!-- <h2>People Counting (By Hour)</h2> -->
+        <div id="areachart"></div>
+        
+    </div>
+    
+
+    <!-- 4line streath chart -->
+    <div class="chart-container4">
+    <!-- <h2>People Counting (Last 7 Days)</h2> -->
+    <div id="chart">
+    </div>
+</div>
+    
+    <div id="linechart4">
+    </div>
+    
+
+{% comment %} adding d3js {% endcomment %}
+<script>
+    {% comment %} d3.select("body").append("p").text("d3js chart"); {% endcomment %}
+    </script>
+   
+<svg id="myPlot"></svg>
+{% comment %} d3js ends here {% endcomment %}
+
+<div id="radar">
+</div>
+
+<script src={% static "/js/script.js" %}></script>
+<script src={% static "/js/radar.js" %}></script>
+<script src={% static "/js/d3js.js" %}></script>
+</body>
+</html>

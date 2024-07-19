@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  #chart {
+    max-width: 750px;
+    margin: 35px auto;
+    margin-top: -27.5vw;
+    margin-left: 55%;
+  }
+  
+  #linechart4 {
+    margin-top: 20px;
+    max-width: 95vw;
+    margin: 35px auto;
+  }
+  #areachart{
+    /* max-width: 650px; */
+  margin: 35px auto;
+  margin-left: 1vw;
+  margin-top: 4vw;
+}
+    h2{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-left: 90px;
+    margin-top: -44vw;
+}
+
+#myPlot{
+  /* max-width: 650px; */
+  /* margin: 35px auto; */
+  width:500px;
+  height:500px;
+  margin-left: 5vw;
+  margin-top: 3vw;
+
+}

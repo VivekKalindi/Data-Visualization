@@ -1,0 +1,12 @@
+body {
+    font-family: Roboto, sans-serif;
+  }
+  
+  #radar {
+    max-width: 650px;
+    height:500px;
+    /* margin: 35px auto; */
+    margin-left: 50vw;
+    margin-top: -30vw;
+  }
+  

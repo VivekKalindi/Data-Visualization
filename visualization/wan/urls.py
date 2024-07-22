@@ -8,6 +8,6 @@ urlpatterns = [
     path("", views.index, name='index'),
     path("radar", views.radar, name='radar'),
 
-    path('api/data/', views.get_data, name='get_data'),
+    path('api/data/', views.table2, name='table2'),
 
 ]

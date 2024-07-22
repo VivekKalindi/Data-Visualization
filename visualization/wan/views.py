@@ -16,10 +16,11 @@ from django.http import JsonResponse
 
 # Create your views here.
 
-def get_data(request):
+# def get_data(request):
+def table2(request):
     # Query your data from the model or any other source
 
-    data = table2.objects.all()  # Replace with your query
+    table2 = table2.objects.all()  # Replace with your query
 
     # Serialize the data to JSON
     serialized_data = [{'field1': item.field1, 'field2': item.field2} for item in data]

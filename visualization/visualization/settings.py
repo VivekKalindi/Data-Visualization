@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'visualization.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'test2',
+        'NAME': 'blkcofr',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': 'localhost',

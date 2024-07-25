@@ -12,12 +12,16 @@ from .models import table2
 from django.http import JsonResponse
 
 
+
+def table2model(request):
+ if request.method=='GET': 
+    return JsonResponse("",safe=False)
 # from .models import YourModel  # Import your model
 
 # Create your views here.
 
 # def get_data(request):
-def table2(request):
+class table2api(APIView):
     # Query your data from the model or any other source
 
     table2 = table2.objects.all()  # Replace with your query
